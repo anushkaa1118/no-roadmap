@@ -523,3 +523,60 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 .guide-block { margin-bottom: 56px; }
 .guide-block h3 { font-size: 26px; margin-bottom: 14px; }
 .guide-block p { color: var(--ink-soft); max-width: 680px; }
+
+/* ---- Article / Profile pages ---- */
+
+.sample-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--waypoint);
+  border: 1px dashed var(--waypoint);
+  border-radius: 999px;
+  padding: 7px 16px;
+  margin-bottom: 28px;
+}
+
+.article-hero-photo {
+  aspect-ratio: 16/7;
+  background: linear-gradient(135deg, var(--rule) 0%, var(--paper) 100%);
+  border: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 32px 0 8px;
+}
+
+.article-body { max-width: 720px; }
+.article-body p { color: var(--ink-soft); margin-bottom: 18px; font-size: 17px; }
+
+.article-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.roadmap-cta {
+  border: 1px solid var(--route);
+  padding: 28px 32px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.roadmap-cta p { margin: 0; color: var(--ink-soft); max-width: 480px; }
+.roadmap-cta h4 { font-family: var(--font-display); font-size: 20px; margin: 0 0 6px; }
