@@ -413,3 +413,113 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
   color: var(--route);
   background: rgba(46,74,107,0.06);
 }
+
+/* ---- Resource database cards ---- */
+
+.meta-list {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+.meta-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  border-top: 1px dashed var(--rule);
+  color: var(--ink-soft);
+}
+.meta-list li:first-child { border-top: none; }
+.meta-list b { color: var(--ink); font-weight: 500; text-align: right; }
+
+.card-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--route);
+  text-decoration: none;
+  border-bottom: 1px solid var(--route);
+}
+.card-link:hover { color: var(--waypoint); border-color: var(--waypoint); }
+
+.region-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 56px 0 24px;
+}
+.region-head:first-of-type { margin-top: 0; }
+.region-head h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--route);
+  margin: 0;
+}
+.region-head .count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.note-box {
+  border-left: 3px solid var(--waypoint);
+  background: rgba(176,124,54,0.06);
+  padding: 16px 20px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-bottom: 40px;
+}
+
+/* ---- Templates (Guide page) ---- */
+
+.template-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  padding: 32px;
+  margin-bottom: 28px;
+  position: relative;
+}
+.template-card .template-title {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--route);
+  margin-bottom: 16px;
+  display: block;
+}
+.template-body {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  color: var(--ink);
+}
+.template-body .fill {
+  color: var(--waypoint);
+  font-weight: 600;
+}
+.copy-btn {
+  position: absolute;
+  top: 28px; right: 28px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: var(--ink-soft);
+}
+.copy-btn:hover { border-color: var(--route); color: var(--route); }
+
+.guide-block { margin-bottom: 56px; }
+.guide-block h3 { font-size: 26px; margin-bottom: 14px; }
+.guide-block p { color: var(--ink-soft); max-width: 680px; }

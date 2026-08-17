@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Guide — No Roadmap</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">NO <span>ROADMAP</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="roadmaps.html">Roadmaps</a></li>
+      <li><a href="guide.html" aria-current="page">Guide</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">MENU</button>
+  </div>
+</nav>
+
+<header class="section-tight">
+  <div class="wrap" style="padding-top:40px;">
+    <p class="eyebrow">The No Roadmap Guide</p>
+    <h1 style="font-size:clamp(36px,6vw,60px); margin:12px 0 24px;">How to actually start.</h1>
+    <p class="lede" style="max-width:640px;">Every roadmap ends by telling you to "email a researcher" or "find shadowing." Here's the part nobody hands you: what to actually write, and how to actually ask.</p>
+  </div>
+</header>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Cold Email Templates</h2></div>
+    <p style="color:var(--ink-soft); max-width:680px; margin-bottom:32px;">Five situations, five templates. Fill in every bracket — an email that's obviously copy-pasted with brackets left in is worse than not sending one. Click "Copy" to grab the text.</p>
+
+    <div class="template-card">
+      <span class="template-title">01 — Research Outreach</span>
+      <div class="template-body" id="tpl1">Subject: Student Interested in Learning More About Research Opportunities
+
+Dear Dr. <span class="fill">[Last Name]</span>,
+
+My name is <span class="fill">[Your Name]</span>, and I am currently a <span class="fill">[grade level]</span> at <span class="fill">[Your School]</span> in <span class="fill">[City, State]</span>. I am deeply interested in <span class="fill">[broad interest area, e.g. microbiology]</span>, and your research on <span class="fill">[specific work they've done, e.g. renal-clearable nanoparticles]</span> caught my attention.
+
+<span class="fill">[One or two sentences on relevant prior experience — coursework, a project, a competition, anything concrete]</span>
+
+Your work in <span class="fill">[their overall research area]</span> strongly aligns with my interests, and I am eager to learn more about your research and your journey, gain real-world experience, and contribute in any way I can. If you are able to share information about potential internships, shadowing opportunities, or volunteer roles, I would be truly grateful.
+
+My schedule is flexible, and I would greatly appreciate any time you could spare.
+
+Thank you so much for your time. I look forward to hearing from you!
+
+Warm regards,
+<span class="fill">[Your Name]</span></div>
+      <button class="copy-btn" onclick="copyTemplate('tpl1', this)">Copy</button>
+    </div>
+
+    <div class="template-card">
+      <span class="template-title">02 — Shadowing Request (Physician)</span>
+      <div class="template-body" id="tpl2">Subject: High School Student Requesting to Shadow
+
+Dear Dr. <span class="fill">[Last Name]</span>,
+
+My name is <span class="fill">[Your Name]</span>, a <span class="fill">[grade level]</span> at <span class="fill">[Your School]</span>. I'm exploring a career in medicine, and <span class="fill">[specialty, e.g. radiology]</span> has stood out to me because <span class="fill">[one specific, genuine reason — not "it seems interesting"]</span>.
+
+<span class="fill">[One sentence on relevant background — a class, a volunteer role, a related interest]</span>
+
+I understand shadowing usually has to go through your hospital's volunteer or GME office rather than a physician directly, so if that's the case for you, I'd be grateful if you could point me to the right contact. If you're able to host students yourself, I'd love the chance to observe even a single shift.
+
+I'm flexible on timing and happy to work around your schedule.
+
+Thank you for considering it — I know physicians get a lot of these requests, and I appreciate you taking the time to read mine.
+
+Warm regards,
+<span class="fill">[Your Name]</span>
+<span class="fill">[Phone number or parent/guardian contact, if a minor]</span></div>
+      <button class="copy-btn" onclick="copyTemplate('tpl2', this)">Copy</button>
+    </div>
+
+    <div class="template-card">
+      <span class="template-title">03 — Volunteer Program Coordinator</span>
+      <div class="template-body" id="tpl3">Subject: Question About the <span class="fill">[Program Name]</span> Volunteer Program
+
+Dear <span class="fill">[Coordinator Name / "Volunteer Services Team"]</span>,
+
+My name is <span class="fill">[Your Name]</span>, and I'm a <span class="fill">[grade level]</span> at <span class="fill">[Your School]</span>. I'm very interested in applying to <span class="fill">[Program Name]</span> and wanted to reach out before I do, in case you can answer a couple of quick questions.
+
+<span class="fill">[Your specific question — e.g. "Is the program open to students outside [City], or only local residents?" / "Is there a waitlist if the summer session is full?"]</span>
+
+I've read through the information on your site and I'm ready to apply as soon as the window opens. Thank you for your time — I really appreciate it.
+
+Best,
+<span class="fill">[Your Name]</span>
+<span class="fill">[Your email / phone]</span></div>
+      <button class="copy-btn" onclick="copyTemplate('tpl3', this)">Copy</button>
+    </div>
+
+    <div class="template-card">
+      <span class="template-title">04 — Polite Follow-Up (No Response After ~2 Weeks)</span>
+      <div class="template-body" id="tpl4">Subject: Re: <span class="fill">[Your Original Subject Line]</span>
+
+Dear Dr. <span class="fill">[Last Name]</span>,
+
+I wanted to follow up on the note I sent on <span class="fill">[date]</span> about <span class="fill">[research / shadowing]</span> — I know inboxes get busy, so no worries at all if it got buried.
+
+I'm still very interested, and my original message is below in case it's easier than searching for it. If now isn't a good time, I completely understand, and I'd appreciate knowing either way so I can plan accordingly.
+
+Thank you again for considering it.
+
+Warm regards,
+<span class="fill">[Your Name]</span>
+
+—
+
+<span class="fill">[Paste your original email below this line]</span></div>
+      <button class="copy-btn" onclick="copyTemplate('tpl4', this)">Copy</button>
+    </div>
+
+    <div class="template-card">
+      <span class="template-title">05 — Thank You (After a Yes, or After Shadowing)</span>
+      <div class="template-body" id="tpl5">Subject: Thank You
+
+Dear Dr. <span class="fill">[Last Name]</span>,
+
+Thank you so much for <span class="fill">[giving me the opportunity to shadow you / agreeing to speak with me / etc.]</span>. <span class="fill">[One specific, genuine detail — something you actually learned or noticed, not a generic compliment]</span>.
+
+<span class="fill">[Optional: a specific follow-up question, or a note on what you plan to do next because of the experience]</span>
+
+I really appreciate you taking the time — it meant a lot, and it's genuinely shaped how I'm thinking about <span class="fill">[medicine / this specialty / research]</span>.
+
+Warm regards,
+<span class="fill">[Your Name]</span></div>
+      <button class="copy-btn" onclick="copyTemplate('tpl5', this)">Copy</button>
+    </div>
+
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>How To</h2></div>
+
+    <div class="guide-block">
+      <h3>Finding a Research Lab</h3>
+      <p>Start closer than you think. Look at the faculty directory of the nearest university's biology, chemistry, or medical school department — most list each professor's current research area in a sentence or two. Search their name on Google Scholar or PubMed to see their actual recent papers; referencing a specific one is the single biggest thing that separates a real email from a form letter.</p>
+      <p>Prioritize labs that have hosted high schoolers before — check the acknowledgments section of a professor's papers, or ask your school counselor which local labs have taken students in past years. A "yes" is far more likely from someone who's done it before.</p>
+    </div>
+
+    <div class="guide-block">
+      <h3>Asking for Shadowing</h3>
+      <p>Most hospitals route shadowing through a volunteer services or GME (graduate medical education) office rather than letting individual physicians say yes directly — this is a liability and HIPAA issue, not personal reluctance. If a physician doesn't respond, try searching "[hospital name] shadowing policy" before assuming the answer is no.</p>
+      <p>Be specific about time commitment upfront — "a single shift" is a much easier yes than an open-ended ask. And always have a backup plan: reach out to 8–10 people, not one.</p>
+    </div>
+
+    <div class="guide-block">
+      <h3>Building a Mentor Relationship</h3>
+      <p>The relationship starts after the first "yes," not before. Send a real thank-you note referencing something specific from the conversation or shadowing day. Follow up every few months with a short, genuine update — not a request — on what you've been doing since. Ask questions that show you've been thinking, not "tell me about your career" but "you mentioned uncertainty is the hardest part — how do you actually sit with that day to day?"</p>
+    </div>
+
+    <div class="guide-block">
+      <h3>Career Exploration on a Budget</h3>
+      <p>Not every opportunity costs money or requires a plane ticket. Free virtual options: NIH's Office of Intramural Training runs public webinars; most medical schools livestream grand rounds or public lecture series; PubMed and ClinicalTrials.gov are free and searchable by anyone, and just reading five abstracts in a field you're curious about will teach you more about what the work actually looks like than a glossy brochure will.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 No Roadmap</span>
+    <span>Real stories. Real paths. Real access.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function copyTemplate(id, btn) {
+  const el = document.getElementById(id);
+  const text = el.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = 'Copied';
+    setTimeout(() => { btn.textContent = original; }, 1500);
+  });
+}
+</script>
+</body>
+</html>
